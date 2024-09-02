@@ -4,7 +4,7 @@ import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 
 export default {
-  mode: "development",
+  mode: "production",
   entry: "./index.jsx",
   output: {
     filename: "main.js",
@@ -35,7 +35,7 @@ export default {
     }),
   ],
   devServer: {
-    static: "/dist",
+    static: path.resolve(import.meta.url + "/dist"),
     historyApiFallback: true,
     port: 8080,
     hot: true,
