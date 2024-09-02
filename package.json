@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "libertymedia homepage",
   "scripts": {
-    "test": "jest",
     "build": "webpack --mode=production",
     "dev": "webpack serve --mode=development",
     "start": "nodemon ./dist/main.js"
