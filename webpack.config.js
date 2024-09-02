@@ -35,7 +35,7 @@ export default {
     }),
   ],
   devServer: {
-    static: path.resolve(import.meta.dirname, "dist"),
+    static: "/dist",
     historyApiFallback: true,
     port: 8080,
     hot: true,
