@@ -1,13 +1,12 @@
 {
   "name": "libertymedia",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "libertymedia homepage",
-  "main": "index.jsx",
   "scripts": {
     "test": "jest",
     "build": "webpack --mode=production",
-    "start": "npm-run-all --parallel watch:build",
-    "watch:build": "webpack serve --watch --mode=development"
+    "dev": "webpack serve --mode=development",
+    "start": "nodemon ./dist/main.js"
   },
   "type": "module",
   "repository": {
