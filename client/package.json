@@ -1,7 +1,7 @@
 {
-  "name": "libertymedia",
+  "name": "libertymedia-front",
   "version": "0.1.0",
-  "description": "libertymedia homepage",
+  "description": "libertymedia homepage frontend with React",
   "scripts": {
     "build": "webpack --mode=production",
     "dev": "webpack serve --mode=development"
@@ -46,6 +46,7 @@
     "create-react-app": "^1.2.1",
     "css-loader": "^7.1.2",
     "libertymedia": "file:",
+    "libertymedia-front": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "style-loader": "^4.0.0"
