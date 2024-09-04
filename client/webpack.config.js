@@ -8,7 +8,7 @@ export default {
   entry: "./index.jsx",
   output: {
     filename: "main.js",
-    path: import.meta.dirname + "/dist",
+    path: path.resolve(import.meta.dirname, "..", "dist"),
   },
   optimization: {
     minimize: true,
@@ -19,12 +19,12 @@ export default {
         // js/jsx를 동시에 같은 방식으로 처리
         test: /\.(js|jsx)$/, // 인터넷의 예제들을 살펴 보니 보통 여기에는 정규표현식을 쓰는 것 같다.
         use: "babel-loader", // js가 있는 이유는...공식 도움말의 Shimming을 보자. Polyfill을 써야 하는 이유인 ECMAScript 버전 차이가 주된 이유라고 한다.
-        exclude: [/node_modules/, /dist/],
+        exclude: [/node_modules/],
       },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
-        exclude: [/node_modules/, /dist/],
+        exclude: [/node_modules/],
       },
     ],
   },
@@ -35,7 +35,7 @@ export default {
     }),
   ],
   devServer: {
-    static: path.resolve(import.meta.url + "/dist"),
+    static: path.resolve(import.meta.dirname, "..", "dist"),
     historyApiFallback: true,
     port: 8080,
     hot: true,
