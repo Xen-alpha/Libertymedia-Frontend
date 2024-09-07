@@ -46,6 +46,9 @@ jobs:
       id-token: write #This is required for requesting the JWT
 
     steps:
+      - name: Delete previous builds
+        run: rm -r ./*
+
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
