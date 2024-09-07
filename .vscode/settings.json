@@ -1,0 +1,4 @@
+{
+  "appService.defaultWebAppToDeploy": "undefined/subscriptions/762d4819-3f2a-4e43-831c-c551189ca1ca/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/libertymedia",
+  "appService.deploySubpath": "."
+}
