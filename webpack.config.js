@@ -31,6 +31,17 @@ export default {
         use: ["style-loader", "css-loader"],
         exclude: [/node_modules/],
       },
+      {
+        test: /\.(png|jpg|bmp)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            publicPath: ".",
+            name: "[name]-[hash].[ext]",
+          },
+        },
+        exclude: [/node_modules/],
+      },
     ],
   },
   plugins: [
