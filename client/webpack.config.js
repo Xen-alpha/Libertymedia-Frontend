@@ -8,7 +8,7 @@ export default {
   entry: "./index.jsx",
   output: {
     filename: "main.js",
-    path: path.resolve(import.meta.dirname, "..", "dist"),
+    path: path.resolve(import.meta.dirname, ".."),
   },
   optimization: {
     minimize: true,
@@ -35,7 +35,7 @@ export default {
     }),
   ],
   devServer: {
-    static: path.resolve(import.meta.dirname, "..", "dist"),
+    static: path.resolve(import.meta.dirname, ".."),
     historyApiFallback: true,
     port: 8080,
     hot: true,
