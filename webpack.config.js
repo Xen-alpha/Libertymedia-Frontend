@@ -8,7 +8,7 @@ export default {
   entry: "./index.jsx",
   output: {
     filename: "main.js",
-    path: path.resolve(import.meta.dirname, ".."),
+    path: path.resolve(import.meta.dirname, "..", "Libertymedia-Backend"),
   },
   optimization: {
     minimize: true,
@@ -35,7 +35,7 @@ export default {
     }),
   ],
   devServer: {
-    static: path.resolve(import.meta.dirname, ".."),
+    static: path.resolve(import.meta.dirname, "..", "Libertymedia-Backend"),
     historyApiFallback: true,
     port: 8080,
     hot: true,
