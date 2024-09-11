@@ -1,8 +1,21 @@
 #header {
+  display: inline-flex;
   position: sticky;
+  width: 100%;
   top: 0px;
   left: 0%;
   right: 0%;
-  height: 22px;
-  z-index: 8;
+  bottom: 0%;
+  height: 32px;
+  vertical-align: middle;
+  background-color: #00a500;
+  color: whitesmoke;
+}
+
+#header img {
+  display: inline;
+}
+
+#header #header-text {
+  vertical-align: middle;
 }

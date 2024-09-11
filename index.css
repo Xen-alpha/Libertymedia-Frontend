@@ -1,0 +1,31 @@
+body {
+  margin: auto;
+}
+
+#root {
+  width: 100%;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  #root {
+    background: #333;
+    color: white;
+  }
+}
+/* 라이트 모드 */
+@media (prefers-color-scheme: light) {
+  #root {
+    background: whitesmoke;
+    color: #333;
+  }
+}
+
+footer {
+  text-align: center;
+}

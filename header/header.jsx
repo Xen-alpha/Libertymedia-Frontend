@@ -9,7 +9,7 @@ export default class Header extends Component {
     return (
       <span id="header">
         <LogoImg />
-        <span>리버티미디어</span>
+        <span id="header-text">리버티미디어</span>
       </span>
     );
   }

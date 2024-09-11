@@ -5,7 +5,7 @@ export default function LogoImg() {
   return createElement("img", {
     src: Logo,
     alt: "로고",
-    width: "64px",
-    height: "64px",
+    width: "32px",
+    height: "32px",
   });
 }
