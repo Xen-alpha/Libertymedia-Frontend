@@ -65,7 +65,7 @@ export default [
     filename: "main.js",
     path: path.resolve(
       import.meta.dirname,
-      "dist"
+      "docs"
     ),
   },
   optimization: {
@@ -106,7 +106,7 @@ export default [
   devServer: {
     static: path.resolve(
       import.meta.dirname,
-      "dist"
+      "docs"
     ),
     historyApiFallback: true,
     port: 3000,
