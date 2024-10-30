@@ -4,16 +4,17 @@ body {
 }
 
 #root {
+  position:relative;
+  min-height: 1080px;
   width: 100%;
-}
-
-#content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 /* 다크 모드 */
 @media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+  }
+
   #root {
     background: #333;
     color: white;
@@ -21,6 +22,9 @@ body {
 }
 /* 라이트 모드 */
 @media (prefers-color-scheme: light) {
+  body {
+    background: whitesmoke;
+  }
   #root {
     background: whitesmoke;
     color: #333;
@@ -28,5 +32,10 @@ body {
 }
 
 footer {
+  position:fixed;
+  bottom: 0%;
+  right:0%;
+  z-index: 4;
   text-align: center;
+  font-size:small;
 }

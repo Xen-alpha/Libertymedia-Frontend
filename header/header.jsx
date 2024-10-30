@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-import "./header.css";
+import "./Header.css";
 
-import LogoImg from "./logoimg";
+import LogoImage from "./LogoImage";
 
 export default class Header extends Component {
   render() {
     return (
       <span id="header">
-        <LogoImg />
+        <LogoImage />
         <span id="header-text">리버티미디어</span>
       </span>
     );

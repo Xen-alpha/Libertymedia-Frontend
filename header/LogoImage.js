@@ -1,7 +1,7 @@
 import { createElement } from "react";
 import Logo from "./Libertymedia.png";
 
-export default function LogoImg() {
+export default function LogoImage() {
   return createElement("img", {
     src: Logo,
     alt: "로고",

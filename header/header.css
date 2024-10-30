@@ -1,6 +1,9 @@
+
+
 #header {
   display: inline-flex;
-  position: sticky;
+  position: fixed;
+  z-index: 8;
   width: 100%;
   top: 0px;
   left: 0%;
@@ -14,8 +17,10 @@
 
 #header img {
   display: inline;
+  background-color:black;
 }
 
 #header #header-text {
   vertical-align: middle;
+  margin: 2px;
 }

@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); /* Nanum-gothic font */
+
+.portal {
+  position:relative;
+  top: 80px;
+  text-align: center;
+  min-height: 480px;
+  justify-content: center;
+  align-items: center;
+  display:grid;
+}
+
+.portal .section-title {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.portal .section-description {
+  display: block;
+  padding: 4px 0;
+}
+
+.section-description > img {
+  width: 128px;
+  height: 128px;
+}
+
+.section-description > p {
+  position: relative;
+  width:80%;
+  left:10%;
+  right:10%;
+  line-break:anywhere;
+  font-family:'Nanum Gothic', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.portal .section-link {
+  padding: 1px;
+  position: relative;
+  bottom: 4px;
+  text-align:center;
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+  .portal {
+    background: linear-gradient( rgba(31,31,31, 0.1) , rgba(159,159,159, 0.9) 20%,  rgba(159,159,159, 0.9) 90%, rgba(31,31,31, 0.1) );
+  }
+
+  .portal .section-title {
+    color: white;
+  }
+
+  .portal .section-description > p {
+    color: #333;
+  }
+
+}
+
+/* 라이트 모드 */
+@media (prefers-color-scheme: light) {
+  .portal {
+    background: linear-gradient( rgba(63,63,63, 0.1) , rgba(191,191,191, 0.9) 20%,  rgba(191,191,191, 0.9) 90%, rgba(63,63,63, 0.1) );
+  }
+
+  .portal .section-title {
+    color: white;
+  }
+
+  .portal .section-description > p {
+    color: black;
+  }
+}
