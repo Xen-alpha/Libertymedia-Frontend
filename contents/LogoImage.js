@@ -1,5 +1,5 @@
 import { createElement } from "react";
-import Logo from "./Libertymedia.png";
+import Logo from "../assets/Libertymedia.png";
 
 export default function LogoImage() {
   return createElement("img", {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import "./PortalSection.css";
-import { IMAGELIST, DESCRIPTION } from "../container/Constant";
+import { IMAGELIST, DESCRIPTION } from "../model/Constant";
 
 export default class PortalSection extends Component {
   constructor(props) {

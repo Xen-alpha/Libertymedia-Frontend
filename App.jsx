@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "./header/Header";
-import PortalSection from "./presentation/PortalSection";
+import Header from "./contents/Header";
+import PortalSection from "./component/PortalSection";
 
-import Logo from "./header/Libertymedia.png";
+import Logo from "./assets/Libertymedia.png";
 
 import './App.css';
 
