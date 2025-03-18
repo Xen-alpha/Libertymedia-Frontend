@@ -17,7 +17,9 @@ export default class Header extends Component {
         <LogoImage />
         <span id="header-text">리버티미디어</span>
         </span>
-        <span id="header-button"><button onClick={openMenu}>〓</button></span>
+        <span id="header-button">
+          <button onClick={openMenu}>메뉴</button>
+        </span>
       </span>
     );
   }
